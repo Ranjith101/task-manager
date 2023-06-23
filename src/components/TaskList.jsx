@@ -1,6 +1,6 @@
 import axios from "axios";
 import React from "react";
-import { TiDelete } from "react-icons/ti";
+import { TiTick } from "react-icons/ti";
 
 const TaskList = ({ task, getTask }) => {
   console.log(task);
@@ -27,7 +27,7 @@ const TaskList = ({ task, getTask }) => {
               <p> Deadline-{date}</p>
             </div>
             <div className="ti d-flex align-items-center">
-              <TiDelete
+              <TiTick
                 onClick={() => deleteTask(id)}
                 style={{
                   cursor: "pointer",
